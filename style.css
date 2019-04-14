@@ -61,30 +61,18 @@ body {
 
 }
 
-.backgrounds {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
-.backgrounds div {
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.backgrounds img {
-    visibility: hidden;
-    width: 100%;
-}
-
 .background-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url('41-transformation.png');
-    opacity: 0.3;
     background-attachment: fixed;
 }
 
 .background-2 {
     background-image: url('2016-09-13-Becoming\ Sky\ Woman-300\ 8x14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .content-block {
