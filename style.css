@@ -1,16 +1,63 @@
-a {
-    text-decoration: none;
-    color: black
+menu .content-block {
+    padding: 20px;
+
 }
 
-a:hover {
+.menu a.register {
+    background-color: rgba(119,0,129, 0.8);
+    background-image: url('button_background_purple.png');
+    color: white;
+    padding: 10px 25px;
+}
+
+.menu a.register:hover {
+    background-color: rgba(119,0,129, 0.8);
+    background-image: url('button_background_purple.png');
+    color: yellow;
+    padding: 10px 25px;
+}
+
+a.register-body, a.donate {
+    display: inline-block;
+    background-color: rgba(119,0,129, 0.8);
+    background-image: url('button_background_purple.png');
+    color: white;
+    padding: 10px 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.register-body:hover, a.donate:hover {
+    color: yellow;
+
+}
+
+.menu a {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+}
+
+.menu a:hover {
     color: #3000B1;
+    padding: 10px 25px;
+}
+
+a:active {
+    color: rgba(119,0,129, 1);
+    padding: 10px 25px;
 }
 
 body {
     width: 100%;
     height: 100%;
     margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
 
 }
 
@@ -41,8 +88,8 @@ body {
 
 .content-block {
     margin: 0 auto;
-    width: 80%;
-    max-width: 1051px;
+    width: 90%;
+    max-width: 50rem;
     color: #505050;
     font-family: futura-pt, sans-serif;
     font-weight: 400;
@@ -53,8 +100,9 @@ body {
 
 .menu ul {
     list-style: none;
-    margin-top: 0;
-    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -63,7 +111,7 @@ body {
 }
 
 .main p {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 20px;
 }
 
@@ -76,6 +124,24 @@ p {
     line-height: 1.5rem;
 }
 
+h1 {
+    color: #1B00B1;
+    font-size: 3.5rem;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 3.2rem;
+}
+
+h2 {
+    color: black;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
 h3 {
     color: #505050;
     font-family: anonymous-pro, monospace;
@@ -85,19 +151,111 @@ h3 {
     line-height: 1.5rem;
 }
 
-h1 {
-    color: #1B00B1;
-    font-size: 3.5rem;
+
+h4 {
+    color: #505050;
+    font-size: 1.5rem;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 
-h2 {
-    color: #000000;
-    font-size: 2rem;
+h5 {
+    color: black;
+    font-size: 1.2rem;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
+    line-height: 1.2rem;
+}
+
+.schedule-day {
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.schedule-time {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.schedule-note {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.schedule {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.schedule ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.schedule li {
+    display: flex;
+}
+
+.schedule .timeslot, .schedule .time-content {
+    /* display: inline-block; */
+}
+
+.schedule .timeslot.first {
+    border-top: none;
+    border-right: none;
+    padding-bottom: 5px;
+}
+
+.schedule .timeslot {
+    width: 40px;
+    padding: 40px 20px;
+    border-top: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+}
+
+.schedule .time-content.first {
+    border-top: none;
+}
+.schedule .time-content {
+    display: flex;
+    flex: 1;
+    border-top: 1px solid #CECECE;
+}
+.schedule .time-heading {
+    flex: 1;
+    padding-left: 20px;
+    font-family: anonymous-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+
+.schedule .time-content-section {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid #CECECE;
+}
+
+.schedule .break {
+    background-color: #CBE8BB;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.schedule .no-right-border {
+    border-right: none;
+}
+
+.schedule .schedule-end {
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
