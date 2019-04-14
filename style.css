@@ -80,6 +80,7 @@ body {
 .background-1 {
     background-image: url('41-transformation.png');
     opacity: 0.3;
+    background-attachment: fixed;
 }
 
 .background-2 {
