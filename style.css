@@ -96,6 +96,7 @@ body {
     font-style: normal;
     font-size: 1.1rem;
     line-height: 1.5rem;
+    padding: 10px 20px;
 }
 
 .menu ul {
@@ -110,9 +111,19 @@ body {
     display: inline-block;
 }
 
-.main p {
+
+.program-block {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 20px;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 50rem;
+    color: #505050;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 p {
@@ -121,7 +132,7 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 h1 {
@@ -168,6 +179,8 @@ h5 {
     font-weight: 500;
     font-style: normal;
     line-height: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .schedule-day {
