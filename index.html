@@ -8,10 +8,24 @@
     <title>Content Moderation Symposium</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/kqq2ctu.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.localscroll.js" type="text/javascript"></script>
+    <script src="jquery.scrollTo.js" type="text/javascript"></script>
 </head>
+<script>
+    document.querySelectorAll('a[href^="#schedule"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }); 
+</script>
 
 <body>
-    <div class="background-1">
+    <div class="background-1" id="program">
         <div class="menu content-block">
             <ul>
                 <li><a href="#program">Program</a></li>
@@ -52,42 +66,52 @@
             </p>
             <br />
             <h5>Featured Speakers and Co-facilitators:</h5>
-            <p>Jillian C. York [Berlin] (Electronic Frontier Foundation)
-                <br />Skawennati [Montreal] (Aboriginal Territories in Cyberspace)
-                <br />Mathias Jud [Berlin] (Can you hear me?)
-                <br />Jonathan Penney [Halifax] (Citizen Lab, Dalhousie U)
-                <br />Sarah Friend [Toronto/Berlin] (Our Networks)
-                <br />Garry Ing [Toronto] (Our Networks, OCAD U)
-                <br />Dante Sanchez [Toronto] (Toronto Mesh)
-                <br />Connor Turland [Toronto] (Holochain)
-                <br />Dawn Walker [Toronto] (Toronto Mesh, University of Toronto)
+            <p><a href="#jillian-york">Jillian C. York</a> [Berlin] (<a target="_blank"
+                    href="https://www.eff.org">Electronic Frontier Foundation</a>)
+                <br /><a href="#skawennati">Skawennati</a> [Montreal] (<a target="_blank"
+                    href="http://abtec.org">Aboriginal Territories in Cyberspace</a>)
+                <br /><a href="#mathias-jud">Mathias Jud</a> [Berlin] (<a target="_blank"
+                    href="https://canyouhearme.de">Can you hear me?</a>)
+                <br /><a href="#jon-penney">Jonathan Penney</a> [Halifax] (<a target="_blank"
+                    href="https://citizenlab.ca">Citizen Lab</a>, Dalhousie U)
+                <br /><a href="#sarah-friend">Sarah Friend</a> [Toronto/Berlin] (<a target="_blank"
+                    href="https://ournetworks.ca">Our Networks</a>)
+                <br /><a href="#garry-ing">Garry Ing</a> [Toronto] (<a target="_blank" href="https://ournetworks.ca">Our
+                    Networks</a>, OCAD U)
+                <br /><a href="#dante-sanchez">Dante Sanchez</a> [Toronto] (<a target="_blank"
+                    href="https://tomesh.net">Toronto Mesh</a>)
+                <br /><a href="#connor-turland">Connor Turland</a> [Toronto] (<a target="_blank"
+                    href="https://holochain.org">Holochain</a>)
+                <br /><a href="#dawn-walker">Dawn Walker</a> [Toronto] (<a target="_blank"
+                    href="https://tomesh.net">Toronto Mesh</a>, University of Toronto)
                 <br />
                 <br />Curated and organized by Pegah Vaezi in conjunction with her Masters of Visual Studies in
-                curatorial
-                studies thesis.
+                curatorial studies thesis.
                 <br />
-                <h5>Featured Speakers and Co-facilitators:</h5>
-                <p><br />Jillian C. York [Berlin] (Electronic Frontier Foundation)
-                    <br />Skawennati [Montreal] (Aboriginal Territories in Cyberspace)
-                    <br />Mathias Jud [Berlin] (Can you hear me?) Jon Penney [Halifax]
-                    <br />(Citizen Lab, Dalhousie U) Sarah
-                    <br />Friend [Toronto/Berlin] (Our Networks)
-                    <br />Garry Ing [Toronto] (Our Networks, OCAD U)
-                    <br />Dante Sanchez [Toronto] (Toronto Mesh)
-                    <br />Connor Turland [Toronto] (Holochain)
-                    <br />Dawn Walker [Toronto] (Toronto Mesh, University of Toronto)
-                    <br />
-                    <br />Curated and organized by Pegah Vaezi in conjunction with her Masters of Visual Studies in
-                    curatorial
-                    studies thesis.
-                    <br />
-                    <br />Image credits: Sarah Friend, Perverse affordances
-                    <br />Skawennati, Becoming Skywoman, 2016, Machinimagraph from She Falls For Ages
-                </p>
+                <br />
+                Presenting Sponsor
+                <br />
+                <a target="_blank" href="https://artmuseum.utoronto.ca">
+                <img src="art_musum_logo_red.png" height="50" /></a>
+                Sponsor
+                <br />
+                <a target="_blank" href="https://cfe.ryerson.ca">
+                <img src="centre_for_free_expression_ryerson_logo.png" height="50" /></a>
+                <br />
+                Community Partners
+                <br />
+                <a target="_blank" href="https://interaccess.org">
+                <img src="citizen_lab_logo.png" height="50" /></a>
+                <a target="_blank" href="https://cfe.ryerson.ca">
+                <img src="interaccess_logo.png" height="50" /></a>
+                <a target="_blank" href="https://torontomesh.com">
+                <img src="Toronto_Mesh_Logo_Black.png" height="50" /></a>
+                    <br /><br /><br />
+
         </div>
     </div>
 
-    <div class="background-2">
+    <div class="background-2" id="schedule">
         <div class="schedule content-block">
             <h2 class="schedule-day">Saturday, May 25</h2>
             <h4 class="schedule-time">10am - 5pm</h4>
@@ -111,17 +135,7 @@
                             <p class="slot-speaker"><a href="#jillian-york">Jilian C. York</a></p>
                         </div>
                 </li>
-                <li>
-                    <div class="timeslot">10:30</div>
-                    <div class="time-content">
-                        <div class="time-content-section no-right-border">
-                            <p class="slot-label"><a href="#opening-keynote">Opening Keynote<br />Negative Space:
-                                    Erasure
-                                    and Resistance on the Social Canvas</a></p>
-                            <p class="slot-speaker">Jilian C. York</p>
-                        </div>
-                    </div>
-                </li>
+
                 <li>
                     <div class="timeslot">11:30</div>
                     <div class="time-content break">
@@ -135,7 +149,8 @@
                     <div class="time-content">
                         <div class="time-content-section no-right-border">
                             <p class="slot-label"><a href="#panel-discussion">Plenary Talks & Panel Discussion</a></p>
-                            <p class="slot-speaker">Sarah Friend, Mathias Jud and Jonathan Penney</p>
+                            <p class="slot-speaker"><a href="#sarah-friend">Sarah Friend</a>, <a
+                                    href="#mathias-jud">Mathias Jud</a> & <a href="#mathias-jud">Jonathan Penney</a></p>
                         </div>
                     </div>
                 </li>
@@ -146,38 +161,22 @@
                             <p class="slot-label"><a href="#participatory-workshop-1">Participatory Workshop<br />Tools
                                     for
                                     the Next Revolution</a></p>
-                            <p class="slot-speaker">Mathias Jud</p>
+                            <p class="slot-speaker"><a href="#mathias-jud">Mathias Jud</a></p>
                         </div>
                         <div class="time-content-section">
-                            <p class="slot-label"><a href="#participatory-workshop-2">Participatory Workshop<br />It
-                                    Works
-                                    On Paper: The Networks We Need</a></p>
-                            <p class="slot-speaker">Dante Sanchez</p>
+                            <p class="slot-label"><a href="#participatory-workshop-2">Participatory Workshop<br />
+                                    It Works On Paper: The Networks We Need</a></p>
+                            <p class="slot-speaker"><a href="#dante-sanchez">Dante Sanchez</a></p>
                         </div>
                         <div class="time-content-section no-right-border">
                             <p class="slot-label"><a href="#participatory-workshop-2">Participatory
                                     Workshop<br />Stranded</a></p>
-                            <p class="slot-speaker">Connor Turland</p>
+                            <p class="slot-speaker"><a href="#connor-turland">Connor Turland</a></p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeslot">15:00</div>
-                    <div class="time-content">
-                        <div class="time-content-section">
-                            <p class="slot-label"><a href="#long-table-1"></a>Long Table Discussion 1<br />Politics of
-                                data,
-                                technology, and law</a></p>
-                            <p class="slot-speaker">Dawn Walker, Dante Sanchez & Connor Turland</p>
-                        </div>
-                        <div class="time-content-section no-right-border">
-                            <p class="slot-label">Long Table Discussion 2</p>
-                            <p class="slot-speaker">Politics of data, creative practice, & freedom of expression</p>
-                            <p class="slot-speaker">Sarah Friend & Garry Ing</p>
-                        </div>
-                        <div class="time-content-section no-right-border"></div>
-                    </div>
-                </li>
+
                 <li>
                     <div class="timeslot">15:00</div>
                     <div class="time-content">
@@ -185,23 +184,19 @@
                             <p class="slot-label"><a href="#long-table-1">Long Table Discussion 1<br />Politics of Data:
                                     technology
                                     and law</a></p>
-                            <p class="slot-speaker">Dawn Walker, Dante Sanchez & Connor Turland</p>
+                            <p class="slot-speaker"><a href="#dawn-walker">Dawn Walker</a>, <a
+                                    href="#dante-sanchez">Dante Sanchez</a> & <a href="#connor-turland">Connor
+                                    Turland</a></p>
                         </div>
                         <div class="time-content-section no-right-border">
                             <p class="slot-label"><a href="#long-table-2">Long Table Discussion 2<br />Politics of Data:
                                     creative
                                     practice and freedom of expression</a></p>
-                            <p class="slot-speaker">Sarah Friend & Garry Ing</p>
+                            <p class="slot-speaker"><a href="#sarah-friend">Sarah Friend</a> & <a
+                                    href="#garry-ing">Garry Ing</a></p>
                         </div>
                 </li>
-                <li>
-                    <div class="timeslot">17:00</div>
-                    <div class="time-content">
-                        <div class="time-content-section no-right-border schedule-end">
-                            End of the first day
-                        </div>
-                    </div>
-                </li>
+
                 <li>
                     <div class="timeslot">16:00</div>
                     <div class="time-content">
@@ -209,7 +204,7 @@
                             <p class="slot-label"><a href="#closing-keynote">Closing Keynote<br />Towards Thrivance:
                                     Changing
                                     Narratives Through Digital Media and Science Fiction</a></p>
-                            <p class="slot-speaker">Skawennati</p>
+                            <p class="slot-speaker"><a href="#skawennati">Skawennati</a></p>
                         </div>
                     </div>
                 </li>
@@ -249,10 +244,11 @@
                     <div class="timeslot">12:30</div>
                     <div class="time-content">
                         <div class="time-content-section no-right-border">
-                            <p class="slot-label"><a href="#opening-keynote">Participatory Workshop<br />Speculative
+                            <p class="slot-label"><a href="#participatory-workshop-sunday">Participatory
+                                    Workshop<br />Speculative
                                     Design:
                                     Protocol, Platform, and Peers</a></p>
-                            <p class="slot-speaker">Garry Ing</p>
+                            <p class="slot-speaker"><a href="#garry-ing">Garry Ing</a></p>
                         </div>
                     </div>
                 </li>
@@ -268,23 +264,373 @@
         </div>
     </div>
 
-    <br />
-    <br />
-    <div class="main program-block" id="jillian-york">
-        <p><b>Jillian C. York</b> is a writer and activist whose work examines the impact of technology on our societal
-            and cultural values. Based in Berlin, she is the Director for International Freedom of Expression at
-            the Electronic Frontier Foundation and a fellow at the Center for Internet & Human Rights at the
-            European University Viadrina. Jillian co-founded Onlinecensorship.org, an award-winning project
-            that seeks to encourage companies to operate with greater transparency and accountability toward
-            their users as they make decisions that regulate speech. She is a frequent public speaker on topics
-            including censorship, surveillance, and the impact of social media on our lives and our societies.
-            Her writing has been published by the New York Times, Al Jazeera, the Atlantic, the Guardian, Quartz,
-            The Washington Post, and Die Zeit, among others.
-        </p>
-        <br />
-        <a target="_blank" href="http://jilliancyork.com/" class="link-image">
-            <img src="link.svg" />
-            jilliancyork.com</a>
+<div class="background-3">
+    <div class="schedule-sessions">
+
+        <div class="content-block program-block">
+            <h1>Sessions</h1>
+        </div>
+
+        <div class="main program-block" id="opening-keynote">
+            <p>
+                <h4>Opening Keynote
+                    <br />Negative Space: Erasure and Resistance on the Social Canvas</h4>
+                <h5><a href="#jillian-york">Jillian C. York</a></h5>
+                is a writer and activist whose work examines the impact of technology on our societal
+                and cultural values. Based in Berlin, she is the Director for International Freedom of Expression at
+                the Electronic Frontier Foundation and a fellow at the Center for Internet & Human Rights at the
+                European University Viadrina. Jillian co-founded Onlinecensorship.org, an award-winning project
+                that seeks to encourage companies to operate with greater transparency and accountability toward
+                their users as they make decisions that regulate speech. She is a frequent public speaker on topics
+                including censorship, surveillance, and the impact of social media on our lives and our societies.
+                Her writing has been published by the New York Times, Al Jazeera, the Atlantic, the Guardian, Quartz,
+                The Washington Post, and Die Zeit, among others.
+            </p>
+        </div>
+
+        <div class="main program-block" id="panel-discussion">
+            <p>
+                <h4>Plenary Talks & Panel Discussion</h4>
+                <h5><a href="#sarah-friend">Sarah Friend</a>, <a href="#mathias-jud">Mathias Jud</a> and <a
+                        href="#mathias-jud">Jonathan Penney</a></h5>
+
+                <h5><a href="#mathias-jud"><br />Mathias Jud</a></h5>
+                The question ‘can you hear me?’ was the title of an installation on the Swiss embassy in Berlin. The
+                situation of surveillance through US- and British secret services have been inverted in this
+                intervention. An open mesh network allowed users to send their messages anonymously - on the frequencies
+                that are intercepted - to the secret services.
+
+                <br /><br />The objections and debates of the one’s with a voice, mark the political field. Of course
+                there are reasons to exclude troublemakers, to withdraw attention from trolls or to filter viruses. What
+                is
+                the protection of the regular operation mode and where does censorship start?
+
+                <br /><br />With installations such as ‘Can you hear me?’ this situation was brought into the world wide
+                spot light. Further there are marginalized voices that are overheard and excluded. Canalizations and
+                categorizations of users and their options of expression have a profound impact. We will go on a search
+                for traces, an
+                archeology to sound the forms of exclusion. We can follow the cultural, economic and political turns.
+                They coin the sociopolitical discourse and write themselves into our infrastructure, almost unnoticed.
+                They can be traced back into our own hard- and software tools, as deep as into the kernels of our mobile
+                phones.
+
+                <h5><a href="#sarah-friend"><br />Sarah Friend</a></h5>
+                The question ‘can you hear me?’ was the title of an installation on the Swiss embassy in Berlin. The
+                situation of surveillance through US- and British secret services have been inverted in this
+                intervention. An open mesh network allowed users to send their messages anonymously - on the frequencies
+                that are intercepted - to the secret services.
+
+                <h5><a href="#jon-penney"><br />Jonathan Penney</a></h5>
+                Cilling effects of digital surveillance
+
+
+            </p>
+        </div>
+
+        <div class="main program-block" id="participatory-workshop-1">
+            <p>
+                <h4>Participatory Workshop
+                    <br />Tools for the Next Revolution</h4>
+                <h5><a href="#mathias-jud">Mathias Jud</a></h5>
+                The workshop is a journey into possibilities of expression in the communication society and uncovers the
+                narratives and power structures behind it. Participants will experience their own Internet independent
+                Wifi communication network, learn how to use it and how to extend the range of Wifi-Networks with self
+                built Antennas.
+
+            </p>
+        </div>
+
+        <div class="main program-block" id="participatory-workshop-2">
+            <p>
+                <h4>Participatory Workshop
+                    <br />It Works On Paper: The Networks We Need</h4>
+                <h5><a href="#dante-sanchez">Dante Sanchez</a></h5>
+                Get ready to doodle! We will outline some of the problems the web faces today before we break into
+                groups to sketch the networks we want to see tomorrow. Drawings in hand, we will discuss what we think
+                of when we say "ideal network", and what resources we can leverage to bring our ideas closer to reality.
+
+            </p>
+        </div>
+
+        <div class="main program-block" id="participatory-workshop-3">
+            <p>
+                <h4>Participatory Workshop
+                    <br />Stranded</h4>
+                <h5><a href="#connor-turland">Connor Turland</a></h5>
+
+            </p>
+        </div>
+
+        <div class="main program-block" id="long-table-1">
+            <p>
+                <h4>Long Table Discussion 1
+                    <br />Politics of Data: technology and law</h4>
+                <h5><a href="#dawn-walker">Dawn Walker</a>, <a href="#dante-sanchez">Dante Sanchez</a> &
+                    <a href="#connor-turland">Connor Turland</a></h5>
+
+            </p>
+        </div>
+
+        <div class="main program-block" id="long-table-2">
+            <p>
+                <h4>Long Table Discussion 2
+                    <br />Politics of Data: creative practice and freedom of expression</h4>
+                <h5><a href="#sarah-friend">Sarah Friend</a> & <a href="#garry-ing">Garry Ing</a></h5>
+
+
+            </p>
+        </div>
+
+        <div class="main program-block" id="participatory-workshop-sunday">
+            <p>
+                <h4>Participatory Workshop
+                    <br />Speculative Design: Protocol, Platform, and Peers</h4>
+                <h5><a href="#garry-ing">Garry Ing</a></h5>
+                Thinking about the contents of the symposium, how can we create interesting ways of distributing the
+                knowledge, experiences, and aspirations of our peers?
+                Through a series of activities and methods, we will prototype and construct a (de)centralized network
+                from the ways we communicate to the platforms that will layered over them.
+                <br />Protocol: Could we speculate, and prototype, a new way of communicating with our peers?
+                What are the boundaries for protocols like dat:// and ipfs?
+                What are their strengths? Weaknesses?
+                What values do they instantiate through their nodes and edges?
+                <br />Platform: Could we speculate on a frame/mirror/window for us to interact with the network?
+                If the browser is an interface for TCP/IP, what is an interface for our new protocols?
+                What are the possible affordances we give to the user?
+                Turing Complete User
+                <br />Peers: Over time, what accumulates on the network? Speculate on how we will reflect on this protocol in
+                the near-future
+                In a time frame ~10 years into the future
+                Reflect on the projects like Geocities and the vernacular web
+                What will the network archivists of the future find through our collective protocols?
+
+
+            </p>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="background-4" id="bios">
+        <div class="content-block program-block">
+            <h1>Bios</h1>
+        </div>
+
+        <div class="main program-block" id="jillian-york">
+            <p><b>Jillian C. York</b> is a writer and activist whose work examines the impact of technology on our
+                societal
+                and cultural values. Based in Berlin, she is the Director for International Freedom of Expression at
+                the Electronic Frontier Foundation and a fellow at the Center for Internet & Human Rights at the
+                European University Viadrina. Jillian co-founded Onlinecensorship.org, an award-winning project
+                that seeks to encourage companies to operate with greater transparency and accountability toward
+                their users as they make decisions that regulate speech. She is a frequent public speaker on topics
+                including censorship, surveillance, and the impact of social media on our lives and our societies.
+                Her writing has been published by the New York Times, Al Jazeera, the Atlantic, the Guardian, Quartz,
+                The Washington Post, and Die Zeit, among others.
+            </p>
+            <a target="_blank" href="https://jilliancyork.com" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                jilliancyork.com
+            </a>
+            <a target="_blank" href="https://twitter.com/jilliancyork" class="social-link">
+                <img src="twitter.svg" width="18" height="18" />
+                @jilliancyork
+            </a>
+        </div>
+
+        <div class="main program-block" id="skawennati">
+            <p><b>Skawennati</b> makes art that addresses history, the future, and change from her perspective as an
+                urban
+                Mohawk woman and as a cyberpunk avatar.
+                Her early adoption of cyberspace as both a location and a medium for her practice has led to
+                groundbreaking
+                projects such as CyberPowWow and the Skins workshops on Aboriginal Storytelling and Digital Media.
+                She is best known for her machinimas—movies made in virtual environments—but also produces still images
+                and
+                sculpture. These are included in both public and private collections and have been widely presented
+                across
+                Turtle Island in major exhibitions such as Now? NOW! at Denver’s Biennial of the Americas and Looking
+                Forward (L’Avenir) at the Montreal Biennale.
+                Born in Kahnawà:ke Mohawk Territory, Skawennati graduated with a BFA from Concordia University in
+                Montreal,
+                where she resides. She is Co-Director of Aboriginal Territories in Cyberspace (AbTeC). In 2015 they
+                launched
+                IIF, the Initiative for Indigenous Futures.
+            </p>
+            <a target="_blank" href="http://skawennati.com" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                skawennati.com
+            </a>
+            <a target="_blank" href="https://twitter.com/skawennati" class="social-link">
+                <img src="twitter.svg" width="18" height="18" />
+                @Skawennati
+            </a>
+        </div>
+
+        <div class="main program-block" id="mathias-jud">
+            <p><b>Mathias Jud</b> was born in Zurich lives and works in Berlin.
+                Since over twenty years he works in a collective with Christoph Wachter.
+                They are professors at the Weißensee Academy of Art Berlin, have participated in numerous international
+                exhibitions and have been awarded many international prizes.
+                Their art works include open-source projects that uncover forms of censorship of the Internet, undermine
+                the
+                concentration of political power and even resolve the dependency on infrastructure. The tools, provided
+                by
+                the artists, are used by communities in the USA, Europe, Australia and in countries such as Syria,
+                Tunisia,
+                Egypt, Iran, India, China and Thailand.
+                Even in North Korea activists participate.
+                But not everyone is fond of these projects.
+                Their findings on secret prisons on US military bases in Guantanamo and Iraq have not been covered by
+                the US
+                media.
+                The PR China denied Wachter and Jud to enter the country since 2013.
+            </p>
+            <a target="_blank" href="https://www.wachter-jud.net" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                wachter-jud.net
+            </a>
+            <a target="_blank" href="https://canyouhearme.de" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                canyouhearme.de
+            </a>
+        </div>
+
+        <div class="main program-block" id="jon-penney">
+            <p><b>Jonathan Penney</b> is the Director of the Law and Technology Institute at Schulich School of Law,
+                Dalhousie University in Canada; a Research Fellow at the Citizen Lab based at the University of
+                Toronto’s
+                Munk School of Global Affairs and Public Policy; and a Research Associate of both the Center for
+                Information
+                Technology Policy at Princeton University and the Civil Servant Project at the MIT Media Lab. Jon’s
+                research
+                lies at the intersection of law, technology, and human rights, with strong empirical, interdisciplinary,
+                and
+                social science dimensions. From the Internet today to artificial intelligence and beyond tomorrow, his
+                work
+                aims to understand technology’s role in public and private sector censorship, surveillance, and other
+                emerging legal/regulatory practices—like the increasing automation of legal processes—including how
+                people’s
+                rights, interests, and activities are impacted. His doctoral thesis explored regulatory chilling effects
+                online through a series of empirical legal case studies exploring how regulatory actions like online
+                copyright enforcement or surveillance impact or “chill” people activities online. His work has received
+                widespread international attention and press coverage, including the Washington Post, Reuters
+                International,
+                New York Times, Newsweek, TIME Magazine, NBC News, and more.
+            </p>
+            <a target="_blank" href="http://jonpenny.com" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                jonpenny.com
+            </a>
+        </div>
+
+        <div class="main program-block" id="sarah-friend">
+            <p><b>Sarah Friend</b> is an artist and software engineer, with special interest in blockchain and the p2p
+                web.
+                She was a member of Consensys for over two years and is currently contributing to CirclesUBI, a
+                permissionless democratically-operated universal basic income.
+                When not doing that, she creates games and other interactive experiences.
+                She is a proud Recurse Centre alum, and is one of the organizers of Our Networks, a conference on all
+                aspects of the distributed web in Toronto.
+            </p>
+            <a target="_blank" href="http://isthisa.com" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                isthisa.com
+            </a>
+            <a target="_blank" href="https://twitter.com/isthisanart_" class="social-link">
+                <img src="twitter.svg" width="18" height="18" />
+                @isthisanart_
+            </a>
+            <a target="_blank" href="https://github.com/ana0" class="social-link">
+                <img src="github.svg" width="18" height="18" />
+                ana0
+            </a>
+        </div>
+
+        <div class="main program-block" id="garry-ing">
+            <p><b>Garry Ing</b> is a designer and researcher currently residing in Toronto.
+                He is a contributor at Toronto Mesh, sessional faculty at OCAD University teaching interactive media,
+                and
+                co-organizer of Our Networks, a conference about the past, present, and future of building our own
+                network
+                infrastructures.
+                His research practice is around network poetics, irl-to-url methods, near-future software, and net art.
+                Previous work and collaborations has been with the Strategic Innovation Lab (sLab) at OCAD University,
+                the
+                Technologies for Aging Gracefully Lab at the University of Toronto, Normative, and Format.
+            </p>
+            <a target="_blank" href="http://skawennati.com" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                skawennati.com
+            </a>
+            <a target="_blank" href="https://twitter.com/skawennati" class="social-link">
+                <img src="twitter.svg" width="18" height="18" />
+                @skawennati
+            </a>
+        </div>
+
+        <div class="main program-block" id="dante-sanchez">
+            <p><b>Dante Sanchez</b> graduated from the University of Toronto with a Bachelor in Applied Science.
+                In the last twelve years, he has developed instrumentation for Geophysics, Environmental, and Life
+                Sciences
+                research.
+                He joined Toronto Mesh two years ago after growing increasingly concerned with issues surrounding online
+                access, privacy, and surveillance.
+                Toronto Mesh is a volunteer group dedicated to helping communities create better networks with
+                open-source
+                and peer-to-peer technologies that promote digital literacy and privacy.
+            </p>
+            <a target="_blank" href="https://twitter.com/dasanc_" class="social-link">
+                <img src="twitter.svg" width="18" height="18" />
+                @dasanc_
+            </a>
+            <a target="_blank" href="https://dasanchez.github.io/" class="social-link">
+                <img src="github.svg" width="18" height="18" />
+                dasanchez
+            </a>
+        </div>
+
+        <div class="main program-block" id="connor-turland">
+            <p><b>Connor Turland</b> is a software developer, educator, and facilitator, with a focus on collaborative,
+                open
+                source, and peer-to-peer technologies. He is especially concerned with finding ways to augment the
+                conversations, and thus the thinking, that is necessary for humans to address the wicked challenges that
+                face us collectively. This has led to much technical and social experimentation in tools and processes
+                that
+                restore agency, unlock higher potentials and collective intelligences. His work also hinges on the
+                theory
+                and practice of peer-to-peer as a basis for social interaction and non-hierarchical power structures.
+            </p>
+            <a target="_blank" href="https://twitter.com/Connoropolous" class="social-link">
+                <img src="twitter.svg" width="18" height="18" />
+                @Connoropolous
+            </a>
+            <a target="_blank" href="https://github.com/Connoropolous" class="social-link">
+                <img src="github.svg" width="18" height="18" />
+                Connoropolous
+            </a>
+        </div>
+
+        <div class="main program-block" id="dawn-walker">
+            <p><b>Dawn Walker</b> is a researcher and PhD student at the University of Toronto focused on participatory
+                design tactics for building environmental civic technologies. She also imagines possibilities for
+                grassroots
+                and decentralized (environmental) data with EDGI and Data Together. A keen urban agriculturalist, Dawn
+                would
+                rather be in the garden.
+            </p>
+            <a target="_blank" href="http://dcwalker.ca" class="social-link">
+                <img src="link.svg" width="18" height="18" />
+                dcwalker.ca
+            </a>
+            <a target="_blank" href="https://twitter.com/dcwalk_" class="social-link">
+                <img src="twitter.svg" width="18" height="18" />
+                @dcwalk_
+            </a>
+        </div>
+
     </div>
 
 </body>

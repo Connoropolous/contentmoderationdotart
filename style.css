@@ -64,12 +64,26 @@ body {
 .background-1 {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('41-transformation.png');
+    background-image: url('sarah-perverse-affordances.png');
     background-attachment: fixed;
 }
 
 .background-2 {
-    background-image: url('2016-09-13-Becoming\ Sky\ Woman-300\ 8x14.png');
+    background-image: url('Skawennati_Becoming-Sky- Woman_2016.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-3 {
+    background-image: url('matias_can-you-hear-me_antennas_2014.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-4 {
+    background-image: url('Skawennati_Kahenteshon-meets-You-Know-Who_2017.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -94,6 +108,7 @@ body {
     margin-bottom: 30px;
     padding: 25px;
     text-align: center;
+    max-width: 50rem;
 }
 
 .menu li {
@@ -102,7 +117,7 @@ body {
 
 
 .program-block {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 20px;
     margin: 0 auto;
     width: 85%;
@@ -170,6 +185,22 @@ h5 {
     line-height: 1.2rem;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+a h5 {
+    color: #1B00B1;
+    font-size: 1.2rem;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.schedule-sessions h4 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .schedule-day {
@@ -260,4 +291,30 @@ h5 {
 .schedule .schedule-end {
     padding-top: 40px;
     padding-bottom: 20px;
+}
+
+.social-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #3000B1;
+}
+
+.slot-speaker a  {
+    color: #505050;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-decoration: none;
+}
+
+.slot-label a  {
+    color: #3000B1;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-decoration: none;
 }
