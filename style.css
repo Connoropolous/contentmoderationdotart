@@ -20,9 +20,26 @@
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
 .menu .content-block {
     padding: 20px;
     position: fixed; 
+    background: #ffffffb3;
+
+}
+
+.menu.content-block.cloned {
+    padding: 20px;
+    position: fixed; 
+    background: #ffffffb3;
+    width: 100%;
+    
 
 }
 
@@ -41,6 +58,7 @@
     color: yellow;
     padding: 10px 25px;
 }
+
 
 a.register-body, a.donate {
     display: inline-block;
@@ -67,6 +85,11 @@ a.register-body:hover, a.donate:hover {
 }
 
 .menu a:hover {
+    color: #3000B1;
+    padding: 10px 25px;
+}
+
+.menu a:active {
     color: #3000B1;
     padding: 10px 25px;
 }
@@ -107,11 +130,15 @@ a.register-body:hover, a.donate:hover {
 }
 
 a.code-of-conduct {
-    padding-left: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
 }
 
 a.code-of-conduct:hover {
-    padding-left: 10px;
+    padding-left: 5px;
+    color: #3000B1;
 }
 
 body {
@@ -152,6 +179,13 @@ body {
     background-attachment: fixed;
 }
 
+.background-footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #dcdcdc;
+}
+
+
 .content-block {
     margin: 0 auto;
     width: 90%;
@@ -168,10 +202,11 @@ body {
 .menu ul {
     list-style: none;
     margin-top: 0px;
-    margin-bottom: 30px;
-    padding: 25px;
+    margin-bottom: 0;
+    padding: 5px;
     text-align: center;
-    max-width: 50rem;
+    width: 100%;
+
 }
 
 .menu li {
@@ -209,6 +244,12 @@ footnote {
     font-style: normal;
     font-size: 0.9rem;
     line-height: 1.5rem;
+}
+
+p.center {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .italic {
