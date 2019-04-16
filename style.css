@@ -46,11 +46,6 @@ a.register-body:hover, a.donate:hover {
     padding: 10px 25px;
 }
 
-a:active {
-    color: rgba(119,0,129, 1);
-    padding: 10px 25px;
-}
-
 body {
     width: 100%;
     height: 100%;
@@ -139,6 +134,22 @@ p {
     line-height: 1.7rem;
 }
 
+footnote {
+    color: #505050;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.italic {
+    font-style: italic;
+
+}
+
+
+
 h1 {
     color: #1B00B1;
     font-size: 3.5rem;
@@ -196,6 +207,26 @@ a h5 {
     line-height: 1.2rem;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.sponsors h5 {
+    margin-top:20px;
+}
+
+.speakers a {
+    text-decoration: none;
+    color: #1B00B1;
+
+}
+
+.speakers a:hover {
+    text-decoration-line: underline;
+    color: #1B00B1;
+
+}
+
+.sponsors a {
+    margin-right: 20px;
 }
 
 .schedule-sessions h4 {
@@ -299,6 +330,12 @@ a h5 {
     color: #3000B1;
 }
 
+.social-link:hover {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #770081;
+}
+
 .slot-speaker a  {
     color: #505050;
     font-family: futura-pt, sans-serif;
@@ -306,6 +343,11 @@ a h5 {
     font-style: normal;
     font-size: 1.1rem;
     line-height: 1.7rem;
+    text-decoration: none;
+}
+
+.slot-speaker a:hover  {
+    color: #770081;
     text-decoration: none;
 }
 
@@ -317,4 +359,14 @@ a h5 {
     font-size: 1.1rem;
     line-height: 1.7rem;
     text-decoration: none;
+}
+
+.schedule-sessions a  {
+    color: #3000B1;
+    text-decoration: none;
+}
+
+.schedule-sessions a:hover  {
+    color: #3000B1;
+    text-decoration: underline;
 }
