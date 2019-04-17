@@ -12,10 +12,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
+
 <body>
- 
-    <button onclick="topFunction()" id="scroll-up-btn" title="Go to top"><i
-            class="fa fa-angle-up"></i></button>
+
+    <button onclick="topFunction()" id="scroll-up-btn" title="Go to top"><i class="fa fa-angle-up"></i></button>
 
     <div class="background-1" id="program">
         <div class="menu content-block" id="menu">
@@ -318,16 +318,10 @@
                     <h4>Opening Keynote
                         <br />Negative Space: Erasure and Resistance on the Social Canvas</h4>
                     <h5><a href="#jillian-york">Jillian C. York</a></h5>
-                    is a writer and activist whose work examines the impact of technology on our societal
-                    and cultural values. Based in Berlin, she is the Director for International Freedom of Expression at
-                    the Electronic Frontier Foundation and a fellow at the Center for Internet & Human Rights at the
-                    European University Viadrina. Jillian co-founded Onlinecensorship.org, an award-winning project
-                    that seeks to encourage companies to operate with greater transparency and accountability toward
-                    their users as they make decisions that regulate speech. She is a frequent public speaker on topics
-                    including censorship, surveillance, and the impact of social media on our lives and our societies.
-                    Her writing has been published by the New York Times, Al Jazeera, the Atlantic, the Guardian,
-                    Quartz,
-                    The Washington Post, and Die Zeit, among others.
+                    Jillian will talk about the erasure of culture and art through the policy and practices of
+                    corporations, discussing how policies are created (and modified over time), how content moderation
+                    works particularly on imagery), and the impact it has on artists and cultural creators through a series
+                    of examples She will finish with some of the ways that artists are pushing back.
                 </p>
             </div>
 
@@ -595,7 +589,8 @@
         </div>
 
         <div class="main program-block" id="jon-penney">
-            <p><b>Jon Penney</b> is a Research Fellow at the University of Toronto’s Citizen Lab and Director of the Law and
+            <p><b>Jon Penney</b> is a Research Fellow at the University of Toronto’s Citizen Lab and Director of the Law
+                and
                 Technology Institute at Dalhousie University. He is also a Research Associate of Princeton’s Center for
                 Information Technology Policy and the Civil Servant Project at the MIT Media Lab.
                 From 2012 to 2015, he was a Fellow and then Research Affiliate at the Berkman Klein Center for Internet
@@ -742,40 +737,40 @@
             </p>
 
         </div>
-     
+
     </div>
 
     <script>
         // Create a clone of the menu, right next to original.
-        $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+        $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
 
         scrollIntervalID = setInterval(stickIt, 10);
 
 
         function stickIt() {
 
-        var orgElementPos = $('.original').offset();
-        orgElementTop = orgElementPos.top;               
+            var orgElementPos = $('.original').offset();
+            orgElementTop = orgElementPos.top;
 
-        if ($(window).scrollTop() >= (orgElementTop)) {
-            // scrolled past the original position; now only show the cloned, sticky element.
+            if ($(window).scrollTop() >= (orgElementTop)) {
+                // scrolled past the original position; now only show the cloned, sticky element.
 
-            // Cloned element should always have same left position and width as original element.     
-            orgElement = $('.original');
-            coordsOrgElement = orgElement.offset();
-            leftOrgElement = coordsOrgElement.left;  
-            widthOrgElement = orgElement.css('width');
-            $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
-            $('.original').css('visibility','hidden');
-        } else {
-            // not scrolled past the menu; only show the original menu.
-            $('.cloned').hide();
-            $('.original').css('visibility','visible');
-        }
+                // Cloned element should always have same left position and width as original element.     
+                orgElement = $('.original');
+                coordsOrgElement = orgElement.offset();
+                leftOrgElement = coordsOrgElement.left;
+                widthOrgElement = orgElement.css('width');
+                $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
+                $('.original').css('visibility', 'hidden');
+            } else {
+                // not scrolled past the menu; only show the original menu.
+                $('.cloned').hide();
+                $('.original').css('visibility', 'visible');
+            }
         }
 
     </script>
-   
+
     <script>
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
