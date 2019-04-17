@@ -31,14 +31,15 @@
     padding: 20px;
     position: fixed; 
     background: #ffffffb3;
-
+    align-content: center;
 }
 
 .menu.content-block.cloned {
-    padding: 20px;
     position: fixed; 
     background: #ffffffb3;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
 
 }
@@ -95,6 +96,14 @@ a.register-body:hover, a.donate:hover {
 }
 
 @media screen and (max-width: 659px) {
+
+    .schedule.content-block {
+        width: 97%;
+    }
+
+    .program-block {
+        background-color: rgba(255, 255, 255, 0.8);
+    }       
     .menu a {
         padding: 10px 15px;
     }
@@ -112,7 +121,13 @@ a.register-body:hover, a.donate:hover {
         border-right: none;
     }
 
-  }
+}
+
+@media screen and (max-width: 372px) { 
+    .social-link { margin-right: 3000px;} 
+}
+
+
 
 .footer ul {
     margin-bottom: 0;
@@ -156,6 +171,7 @@ body {
     background-repeat: no-repeat;
     background-image: url('sarah-perverse-affordances.png');
     background-attachment: fixed;
+    background-position: top;
 }
 
 .background-2 {
@@ -163,6 +179,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: top;
 }
 
 .background-3 {
@@ -170,6 +187,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: top;
 }
 
 .background-4 {
@@ -177,6 +195,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%; 
+    background-position: top;
 }
 
 .background-footer {
