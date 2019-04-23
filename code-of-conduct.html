@@ -46,117 +46,141 @@
         <div class="main program-block">
             <h2>Our Code of Conduct</h2>
             <p>This symposium is dedicated to providing a harassment-free environment for everyone, regardless of
-                    gender, gender identity and expression, sexual orientation, disability, physical appearance, body size,
-                    race, age, religion, technical skill level, or academic level.
-                    We do not tolerate harassment of symposium participants or organizers in any form.
-                    Conference participants violating these rules may be sanctioned or expelled 
-                    from the symposium without a refund at the discretion of the symposium organizers. 
-                    <br/>
-                    <br/>
-                    <h2>Unacceptable Behaviour</h2>
-                    Verbal comments that reinforce social structures of domination related to gender,
-                    gender identity and expression, sexual orientation, disability, physical appearance,
-                    body size, race, age, religion, technical skill level, or academic level.<br/>
-                    Sexual "jokes" and images in public spaces<br/>
-                    Deliberate intimidation, stalking, or following <br/>
-                    Harassing photography or recording<br/>
-                    Sustained disruption of talks or other events<br/>
-                    Inappropriate physical contact<br/>
-                    Unwelcome sexual attention<br/>
-                    Advocating for, or encouraging, any of the above behaviour.<br/>
-                    <br/>
-
+                gender, gender identity and expression, sexual orientation, disability, physical appearance, body size,
+                race, age, religion, technical skill level, or academic level.
+                We do not tolerate harassment of symposium participants or organizers in any form.
+                Symposium participants violating these rules may be sanctioned or expelled
+                from the event without a refund at the discretion of the symposium organizers.
+                <br />
+                <br />
+                <h2>Expected Behaviour</h2>
+                We expect that symposium participant and organizors remain mindful of, and takes responsibility for,
+                their speech and behavior.
+                This includes:
+                <br />Always acting out of respect and concern for the free expression of others.
+                <br />Actively listening to others and not dominating discussions.
+                <br />Respecting physical and emotional boundaries.
+                <br />Not making assumptions about identity, experiences, or preferred pronouns.
+                <br />Not using words that are racist, sexist, homophobic, classist, transphobic, cissexist or ableist.
+                <br />Humbly accepting respectful correction (or correcting yourself!),
+                keeping in mind that the impact of your words on other people is more important than your intent.
+                <br />
+                <br />
+                <h2>Unacceptable Behaviour</h2>
+                Verbal comments that reinforce social structures of domination related to gender,
+                gender identity and expression, sexual orientation, disability, physical appearance,
+                body size, race, age, religion, technical skill level, or academic level.
+                <br />Sexual "jokes" and images in public spaces
+                <br />Deliberate intimidation, stalking, or following
+                <br />Harassing photography or recording
+                <br />Sustained disruption of talks or other events
+                <br />Inappropriate physical contact
+                <br />Unwelcome sexual attention
+                <br />Advocating for, or encouraging, any of the above behaviour.
+                <br />
+                Exception: Discussion or images related to sex, pornography, discriminatory language, or similar is
+                welcome if it meets all of the following criteria: (a) the organizers have specifically granted
+                permission in writing, (b) it is necessary to the topic of discussion and no alternative exists, (c) it
+                is presented in a respectful manner, especially towards women and LGBTQIA people, (d) attendees are
+                warned in advance in the program and respectfully given ample warning and opportunity to leave
+                beforehand. This exception specifically does not allow use of gratuitous sexual images as
+                attention-getting devices or unnecessary examples.
+                <br />
                 </a> For any conduct reports or concerns please contant us at
                 <a href="mailto:pegah.vaezi@mail.utoronto.ca"></a>pegah.vaezi@mail.utoronto.ca</a>.
-                <br/>
-                <br/>
-                    <i>This code is adapted from the anti-harassment policy from the Geek Feminism Wiki.</i>
-
-                </p> 
-
-            </div>
-
-    <div class="background-footer">
-        <div class="content-block footer">
-            <footnote>This symposium is dedicated to providing a harassment-free environment for everyone, regardless of
-                gender, gender identity and expression, sexual orientation, disability, physical appearance, body size,
-                race, age, religion or technical skill level.<a target="_blank"
-                    href="https://contentmoderation.art/code-of-conduct" class="code-of-conduct">Our Code of Conduct can
-                    be found here.</a></a> For any conduct reports or concerns please contant us at
-                    <a href="mailto:pegah.vaezi@mail.utoronto.ca"></a>pegah.vaezi@mail.utoronto.ca</a>.
-
                 <br />
+                <br />
+                <i>This code is inspired by the code of conduct from Our Networks and adapted from the anti-harassment
+                    policy from the Geek Feminism Wiki and Gamma Space Code of Conduct.</i>
 
-            </footnote>
-            <p class="center">
-                <footnote>Website desgined and developed by Pegah Vaezi & Connor Turland</footnote>
             </p>
 
         </div>
 
-    </div>
+        <div class="background-footer">
+            <div class="content-block footer">
+                <footnote>This symposium is dedicated to providing a harassment-free environment for everyone,
+                    regardless of
+                    gender, gender identity and expression, sexual orientation, disability, physical appearance, body
+                    size,
+                    race, age, religion or technical skill level.<a target="_blank"
+                        href="https://contentmoderation.art/code-of-conduct" class="code-of-conduct">Our Code of Conduct
+                        can
+                        be found here.</a></a> For any conduct reports or concerns please contant us at
+                    <a href="mailto:pegah.vaezi@mail.utoronto.ca"></a>pegah.vaezi@mail.utoronto.ca</a>.
 
-    <script>
-        // Create a clone of the menu, right next to original.
-        $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+                    <br />
 
-        scrollIntervalID = setInterval(stickIt, 10);
+                </footnote>
+                <p class="center">
+                    <footnote>Website desgined and developed by Pegah Vaezi & Connor Turland</footnote>
+                </p>
+
+            </div>
+
+        </div>
+
+        <script>
+            // Create a clone of the menu, right next to original.
+            $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+
+            scrollIntervalID = setInterval(stickIt, 10);
 
 
-        function stickIt() {
+            function stickIt() {
 
-            var orgElementPos = $('.original').offset();
-            orgElementTop = orgElementPos.top;
+                var orgElementPos = $('.original').offset();
+                orgElementTop = orgElementPos.top;
 
-            if ($(window).scrollTop() >= (orgElementTop)) {
-                // scrolled past the original position; now only show the cloned, sticky element.
+                if ($(window).scrollTop() >= (orgElementTop)) {
+                    // scrolled past the original position; now only show the cloned, sticky element.
 
-                // Cloned element should always have same left position and width as original element.     
-                orgElement = $('.original');
-                coordsOrgElement = orgElement.offset();
-                leftOrgElement = coordsOrgElement.left;
-                widthOrgElement = orgElement.css('width');
-                $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
-                $('.original').css('visibility', 'hidden');
-            } else {
-                // not scrolled past the menu; only show the original menu.
-                $('.cloned').hide();
-                $('.original').css('visibility', 'visible');
+                    // Cloned element should always have same left position and width as original element.     
+                    orgElement = $('.original');
+                    coordsOrgElement = orgElement.offset();
+                    leftOrgElement = coordsOrgElement.left;
+                    widthOrgElement = orgElement.css('width');
+                    $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
+                    $('.original').css('visibility', 'hidden');
+                } else {
+                    // not scrolled past the menu; only show the original menu.
+                    $('.cloned').hide();
+                    $('.original').css('visibility', 'visible');
+                }
             }
-        }
 
-    </script>
+        </script>
 
-    <script>
+        <script>
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
-        });
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scroll-up-btn").style.display = "block";
-            } else {
-                document.getElementById("scroll-up-btn").style.display = "none";
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("scroll-up-btn").style.display = "block";
+                } else {
+                    document.getElementById("scroll-up-btn").style.display = "none";
+                }
             }
-        }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
 
-    </script>
+        </script>
 
 
 </body>
